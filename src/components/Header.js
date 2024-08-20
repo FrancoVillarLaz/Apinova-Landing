@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <header className="bg-background px-4 lg:px-6 py-4 flex items-center justify-between">
       <a className="flex items-center gap-2" href="#">
+        <span className="text-lg font-semibold">Apinova</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -18,7 +19,6 @@ const Header = () => {
         >
           <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
         </svg>
-        <span className="text-lg font-semibold">Apinova</span>
       </a>
       <nav className="hidden lg:flex gap-6">
         {["Sobre Nosotros", "Servicios", "Proyectos", "Testimonios", "Contacto"].map((item) => (
