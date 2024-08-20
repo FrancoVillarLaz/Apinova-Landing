@@ -20,10 +20,19 @@ const Header = () => {
           <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
         </svg>
       </a>
-      <nav className="hidden lg:flex gap-6">
-        {["Sobre Nosotros", "Servicios", "Proyectos", "Testimonios", "Contacto"].map((item) => (
-          <a key={item} className="text-sm font-medium hover:text-primary transition-colors" href="#">
-            {item}
+      <nav className="hidden lg:flex gap-6 ">
+        {[
+          { label: "Sobre Nosotros", link: "#sobre-nosotros" },
+          { label: "Servicios", link: "#servicios" },
+          { label: "Proyectos", link: "#proyectos" },
+          { label: "Contacto", link: "#contacto" }
+        ].map((item) => (
+          <a
+            key={item.label}
+            className="text-sm font-medium hover:text-primary transition-colors"
+            href={item.link}
+          >
+            {item.label}
           </a>
         ))}
       </nav>

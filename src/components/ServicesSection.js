@@ -79,7 +79,7 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-12 md:py-20 lg:py-28 bg-muted flex justify-center">
+    <section id="servicios" className="py-12 md:py-20 lg:py-28 bg-muted flex justify-center">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Nuestros Servicios</h2>
